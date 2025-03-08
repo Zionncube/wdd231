@@ -1,0 +1,131 @@
+/* header styles */
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    color:black;
+    background-color: rgb(166, 255, 0);
+}
+
+nav {
+    background-color: darkgreen;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around ;
+}
+
+nav a :hover{
+    background-color: darkgray;
+    color: darkred;
+    border-radius: 5px;
+}
+
+/* main style */
+main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 20px;
+}
+
+/* Card 1 styles (80%width) */
+
+.card1 {
+    grid-column: 1;
+    width: 90%;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: cornsilk;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px;
+    border-radius: 5%;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 h2 {
+    margin-bottom: 20px;
+}
+
+.card1 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1 .content img{
+    width: 30%;
+}
+.card1 .content  p{
+    max-width: 70%;
+}
+.card1 h2 {
+    margin-bottom: 20px;
+    background-color: darkgreen;
+    padding: 20px;
+    width: 100%;
+    text-align:  center;
+}
+
+.card1 .content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1 .content1 img{
+    width: 30%;
+}
+.card1 .content1  p{
+    max-width: 70%;
+}
+
+
+.card2 {
+    grid-column: 2;
+    width: 90%;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgb(220, 255, 245);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px;
+    border-radius: 5%;
+}
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2 h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    background-color: darkgreen;
+    padding-top: 0;
+    padding: 20px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(166, 255, 0);
+}
+
+/*single-column layout for phone */
+@media only screen and (max-width:768px) {
+    main {grid-template-columns: 1fr;}
+}
