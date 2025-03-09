@@ -1,17 +1,16 @@
 /* header styles */
-
-h1 {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px;
+    color: black;
+    background-color: chartreuse;
 }
 
-h1 {
+header img {
     margin: 0;
     padding: 10px;
-    color:black;
-    background-color: rgb(166, 255, 0);
 }
 
 /* removing text decor and chang the nav writing to color black*/
@@ -219,12 +218,8 @@ footer {
 
 #lastModified {
     font-style: italic;
-    padding-top: 15px;
 }
 
-/*single-column layout for phone */
-@media only screen and (max-width:768px) {
-    main {grid-template-columns: 1fr;}
-}
+
 
 
