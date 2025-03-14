@@ -40,4 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("menu-toggle").addEventListener("click", () => {
         document.getElementById("menu").classList.toggle("show");
     });
+
+    //get the hamburger menu and the nav
+    const menuToggle = document.getElementById("menu-toggle")
+    const menu = document.getElementById("menu")
+
+    //add even listerner to the hamburger menu button
+    menuToggle.addEventListener("click",() =>{
+        //toggle the visibility of the nav
+        menu.classList.toggle("show");
+    });
 });
