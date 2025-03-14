@@ -1,17 +1,7 @@
-//get the current year
-const currentYear =new
-Date().getFullYear();
+// Get the current year
+const currentYear = new Date().getFullYear();
+document.getElementById("CurrentYear").textContent = currentYear;
 
-//get the document's last modified date
-const LastModified = document.lastModified;
-
-//get the footer paragrahs 
-const FooterParagraph = document.querySelectorAll('footer p');
-
-//set the text content o the first paragraph to current year
-FooterParagraphs [1].textContent = `copyright ${currentYear}`;
-
-//set the text content of the last second paragraphto the last modified date
-FooterParagraphs[1].textContent = `last modified: ${LastModified}`;
-
-
+// Get the last modified date
+const lastModifiedDate = document.lastModified;
+document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate}`;

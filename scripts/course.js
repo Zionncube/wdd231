@@ -81,41 +81,21 @@ const courses = [
 
 // Function to display courses
 function displayCourses(courses) {
-    const courseList = document.querySelector('.course-list');
-    courseList.innerHTML = '';
-    courses.forEach((course) => {
-      const courseCard = document.createElement('div');
-      courseCard.classList.add('course-card');
-      if (course.completed) {
-        courseCard.classList.add('completed');
-      }
-      courseCard.innerHTML = `
-        <h2>${course.name}</h2>
-        <p>Credits: ${course.credits}</p>
-      `;
-      courseList.appendChild(courseCard);
-    });
-    // Display total credits
-    const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
-    document.querySelector('.total-credits').innerHTML = `Total Credits: ${totalCredits}`;
-  }
-  
-  // Display all courses initially
-  displayCourses(courses);
-  
-  // Button event listeners
-  document.querySelector('.show-all').addEventListener('click', () => {
-    displayCourses(courses);
+  const courseList = document.querySelector('.course-list');
+  courseList.innerHTML = '';
+  courses.forEach((course) => {
+    const courseCard = document.createElement('div');
+    courseCard.classList.add('course-card');
+    if (course.completed) {
+      courseCard.classList.add('completed');
+    }
+    courseCard.innerHTML = `
+      <h2>${course.title}</h2>
+      <p>Credits: ${course.credits}</p>
+    `;
+    courseList.appendChild(courseCard);
   });
-  
-  document.querySelector('.show-wdd').addEventListener('click', () => {
-    const wddCourses = courses.filter((course) => course.name.startsWith('WDD'));
-    displayCourses(wddCourses);
-  });
-  
-  document.querySelector('.show-cse').addEventListener('click', () => {
-    const cseCourses = courses.filter((course) => course.name.startsWith('CSE'));
-    displayCourses(cseCourses);
-  });
+}
 
-
+// Display all courses initially
+displayCourses(courses);
