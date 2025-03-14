@@ -1,0 +1,58 @@
+[
+    {
+        "name": "ABC Solutions",
+        "address": "123 Market St, Timbuktu",
+        "phone": "800-555-1234",
+        "website": "https://abcsolutions.com",
+        "image": "abc-logo.png",
+        "membership": 3
+    },
+    {
+        "name": "XYZ Tech",
+        "address": "456 Innovation Ave, Timbuktu",
+        "phone": "800-555-5678",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.png",
+        "membership": 2
+    },
+    {
+        "name": "Timbuktu Café",
+        "address": "789 Coffee Ln, Timbuktu",
+        "phone": "800-555-9012",
+        "website": "https://timbuktucafe.com",
+        "image": "cafe-logo.png",
+        "membership": 1
+    },
+    {
+        "name": "ABC Solutions",
+        "address": "123 Market St, Timbuktu",
+        "phone": "800-555-1234",
+        "website": "https://abcsolutions.com",
+        "image": "abc-logo.png",
+        "membership": 3
+    },
+    {
+        "name": "XYZ Tech",
+        "address": "456 Innovation Ave, Timbuktu",
+        "phone": "800-555-5678",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.png",
+        "membership": 2
+    },
+    {
+        "name": "Timbuktu Café",
+        "address": "789 Coffee Ln, Timbuktu",
+        "phone": "800-555-9012",
+        "website": "https://timbuktucafe.com",
+        "image": "cafe-logo.png",
+        "membership": 1
+    },
+    {
+        "name": "ABC Solutions",
+        "address": "123 Market St, Timbuktu",
+        "phone": "800-555-1234",
+        "website": "https://abcsolutions.com",
+        "image": "abc-logo.png",
+        "membership": 3
+    }
+]
