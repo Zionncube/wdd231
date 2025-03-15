@@ -78,13 +78,17 @@ nav ul li a {
   height: auto;
 }
 
-/* List View */
+ List View 
 .list-view .card {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+
+ .list-view .card p {
+  margin: 0;
+ }
 /* Footer */
 footer {
   background: #333;
@@ -109,5 +113,4 @@ footer {
   text-align: right;
 }
 
-
-
+/*grid view*/

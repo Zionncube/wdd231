@@ -1,58 +1,58 @@
 [
     {
-        "name": "ABC Solutions",
-        "address": "123 Market St, Timbuktu",
-        "phone": "800-555-1234",
-        "website": "https://abcsolutions.com",
-        "image": "abc-logo.png",
+        "name": "Hammarsdale Solutions",
+        "address": "123 Market St, Hammarsdale",
+        "phone": "800-555-1830",
+        "website": "https://Hammarsdalesolutions.com",
+        "image": "hamms.jpg",
         "membership": 3
     },
     {
-        "name": "XYZ Tech",
-        "address": "456 Innovation Ave, Timbuktu",
+        "name": "Jabulani Tech",
+        "address": "456 Innovation Ave, Hammarsdale",
         "phone": "800-555-5678",
-        "website": "https://xyztech.com",
-        "image": "xyz-logo.png",
+        "website": "https://Jabulanitech.com",
+        "image": "jabu.jpg",
         "membership": 2
     },
     {
-        "name": "Timbuktu Café",
-        "address": "789 Coffee Ln, Timbuktu",
+        "name": "New Café",
+        "address": "789 Coffee Ln, Hammarsdale",
         "phone": "800-555-9012",
-        "website": "https://timbuktucafe.com",
-        "image": "cafe-logo.png",
+        "website": "https://Newcafe.com",
+        "image": "cafe.jpg",
         "membership": 1
     },
     {
-        "name": "ABC Solutions",
-        "address": "123 Market St, Timbuktu",
-        "phone": "800-555-1234",
-        "website": "https://abcsolutions.com",
-        "image": "abc-logo.png",
+        "name": "New  Horizon Auto",
+        "address": "123 Market St, Hammarsdale",
+        "phone": "800-555-1034",
+        "website": "https://nwehorizonauto.com",
+        "image": "nha.jpg",
         "membership": 3
     },
     {
-        "name": "XYZ Tech",
-        "address": "456 Innovation Ave, Timbuktu",
+        "name": "Malanga Tech",
+        "address": "451 Nqai Rd, Hammarsdale",
         "phone": "800-555-5678",
-        "website": "https://xyztech.com",
-        "image": "xyz-logo.png",
+        "website": "https://malangatech.com",
+        "image": "malanga.jpg",
         "membership": 2
     },
     {
-        "name": "Timbuktu Café",
-        "address": "789 Coffee Ln, Timbuktu",
-        "phone": "800-555-9012",
-        "website": "https://timbuktucafe.com",
-        "image": "cafe-logo.png",
+        "name": "Future Café",
+        "address": "749 pine St, Hammarsdale",
+        "phone": "800-555-9032",
+        "website": "https://futurecafe.com",
+        "image": "fcafe.jpg",
         "membership": 1
     },
     {
-        "name": "ABC Solutions",
-        "address": "123 Market St, Timbuktu",
-        "phone": "800-555-1234",
+        "name": " Bhengu Solutions",
+        "address": "12 Market St, Hammarsdale",
+        "phone": "800-555-1444",
         "website": "https://abcsolutions.com",
-        "image": "abc-logo.png",
+        "image": "Bhengu.jpg",
         "membership": 3
     }
 ]
