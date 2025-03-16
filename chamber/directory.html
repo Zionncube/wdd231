@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <!-- Favicon -->
-  <title>Chamber Directory</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <!-- Facebook Social Media Meta Tags -->
   <meta property="og:title" content="Chamber of Commerce Directory">
@@ -24,9 +23,11 @@
 </head>
 <body>
     <header>
-        <div class logo>
-        <img src="images/logo.jpg" alt="Logo">
-        <figcaption>Hammarsdale Chamber of Commerce</figcaption>
+        <div class="logo">
+            <figure>
+            <img src="images/logo.jpg" alt="Logo">
+            <figcaption>Hammarsdale Chamber of Commerce</figcaption>
+            </figure>
         </div>
     <nav>
         <button id="menu-toggle">=</button>
@@ -50,40 +51,40 @@
         <button id="list-view">List view</button>
         </div>
         <section id="directory"></section>
+        <h1>Directory</h1>
     </main>
     <footer>
-        <footer>
-            <div class="adress">
-                <p>
-                    Hammarsdale Chamber of Commerse
-                    76 commicial street
-                    Hammarsdale, Mpumalanga
-                    info@Hammarsdale.org
-                    (031) 7740 6947
-                </p>
-            </div>
-            <div class="Social-links">
-                <a href="https://www.youtube.com/chamberofcommerce" target="_blank">
-                    <img src="images/youtube.jpg" alt="YouTuube">
-                </a>
-                <a href="https://www.twitter.com/chamberofcommerce_123" target="_blank">
-                    <img src="images/twitter.jpg" alt="Twitter">
-                </a>
-                <a href="https://www.linkedin.com/chamberofcommerce" target="_blank">
-                    <img src="images/linkedin.jpg" alt="LinkedIn">
-                </a>
-            </div>
 
-            <div class="dates">
+        <div class="adress">
+            <p>
+                Hammarsdale Chamber of Commerse
+                76 commicial street
+                Hammarsdale, Mpumalanga
+                info@Hammarsdale.org
+                (031) 7740 6947
+            </p>
+        </div>
+        <div class="Social-links">
+            <a href="https://www.youtube.com/chamberofcommerce" target="_blank">
+                <img src="images/youtube.jpg" alt="YouTuube">
+            </a>
+            <a href="https://www.twitter.com/chamberofcommerce_123" target="_blank">
+                <img src="images/twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/chamberofcommerce" target="_blank">
+                <img src="images/linkedin.jpg" alt="LinkedIn">
+            </a>
+        </div>
+
+        <div class="dates">
             <p>&copy; <span id="year"></span> | WDD 231 | Chamber of Commerce | Happiness Ncube</p>
             <p>Last modified: <span id="last-modified"></span></p>
-            </div>
-          </footer>
-          <script src="scripts/dates.js" defer></script>
-          <script src="scripts/navigation.js" defer></script>
-          <script src="scripts/members.js" defer></script>
+        </div>
     </footer>
-    </main>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    </footer>
 </body>
 </html>
 

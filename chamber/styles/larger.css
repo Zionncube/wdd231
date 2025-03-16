@@ -97,12 +97,12 @@ footer {
   grid-template-columns: 10fr 10fr 10fr;
   align-items: center;
   width: 170%;
-  padding: 20;
+  padding: 20px;
 }
 
 .address {
   text-align: left;
-  padding-right: 50;
+  padding-right: 50px;
 }
 
 .social-links {
