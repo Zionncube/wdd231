@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 /* Directory */
-.view-toggle {
+/*.view-toggle {
   margin: 10px 0;
 }
 
@@ -94,9 +94,9 @@ footer {
   background: #333;
   color: white;
   display: grid;
-  grid-template-columns: 10fr 10fr 10fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  width: 170%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -107,6 +107,7 @@ footer {
 
 .social-links {
   text-align: center;
+  align-items: center;
 }
 
 .copyright {

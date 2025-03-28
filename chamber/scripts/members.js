@@ -39,3 +39,29 @@ document.getElementById("list-view").addEventListener("click", () => {
 });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetchSpotlightMembers();
+});
+
+async function fetchSpotlightMembers() {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    const spotlights = document.getElementById("spotlight-container");
+
+    let goldSilver = data.members.filter(m => m.level === "Gold" || m.level === "Silver");
+    goldSilver = goldSilver.sort(() => Math.random() - 0.5).slice(0, 3);
+
+    goldSilver.forEach(member => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+            <h3>${member.name}</h3>
+            <p>${member.tagline}</p>
+            <img src="${member.logo}" alt="${member.name}">
+            <p>Email: ${member.email}</p>
+            <p>Phone: ${member.phone}</p>
+            <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+        `;
+        spotlights.appendChild(div);
+    });
+}
