@@ -1,24 +1,22 @@
+const apiKey = "12490027660b5bd82f4bf2c294cd0f3f"; // Your API Key
+const city = "Hammarsdale"; // Your city
 
-    const apiKey = "YOUR_API_KEY";  // Replace with your OpenWeatherMap API Key
-const city = "Your_City";       // Replace with your city
-
-// Function to fetch weather data
 async function fetchWeather() {
     try {
         // Fetch current weather
-        const weatherResponse = await fetch ('https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial');
+        const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`);
         const weatherData = await weatherResponse.json();
 
         // Fetch 3-day forecast
-        const forecastResponse = await fetch('https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial');
+        const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`);
         const forecastData = await forecastResponse.json();
 
         // Display current weather
-        document.getElementById("temperature").textContent = ${Math.round(weatherData.main.temp)}°F;
-        document.getElementById("description").textContent = weatherData.weather[0].description;
-        document.getElementById("humidity").textContent = Humidity: ${weatherData.main.humidity}%;
-        document.getElementById("sunrise").textContent = Sunrise: ${new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString()};
-        document.getElementById("sunset").textContent = Sunset: ${new Date(weatherData.sys.sunset * 1000).toLocaleTimeString()};
+        document.getElementById("temperature").textContent = Math.round(weatherData.main.temp);
+        document.getElementById("weather-description").textContent = weatherData.weather[0].description;
+        document.getElementById("humidity").textContent = weatherData.main.humidity;
+        document.getElementById("sunrise").textContent = new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString();
+        document.getElementById("sunset").textContent = new Date(weatherData.sys.sunset * 1000).toLocaleTimeString();
 
         // Process and display the 3-day forecast
         let forecastHTML = "";
@@ -57,8 +55,4 @@ async function fetchWeather() {
     }
 }
 
-// Run function on page load
-fetchWeather();
-
-
-
+document.addEventListener("DOMContentLoaded", fetchWeather);
