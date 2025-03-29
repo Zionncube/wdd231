@@ -1,5 +1,5 @@
-const apiKey = "12490027660b5bd82f4bf2c294cd0f3f"; // Your API Key
-const city = "Hammarsdale"; // Your city
+const apiKey = "12490027660b5bd82f4bf2c294cd0f3f"; // API Key
+const city = "Hammarsdale"; //  city
 
 async function fetchWeather() {
     try {

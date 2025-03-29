@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("DOMContentLoaded", () => {
         fetchSpotlightMembers();
     });
-    
+
     async function fetchSpotlightMembers() {
         try {
             const response = await fetch("data/members.json");
@@ -84,7 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching spotlight members:", error);
         }
     }
-    
+
     // Run the function when the page loads
     document.addEventListener("DOMContentLoaded", fetchSpotlightMembers);
+
+
+
+    
     
