@@ -209,13 +209,20 @@ nav a:hover {
   grid-template-columns: 2fr 1fr 1fr;
 }
 
-.content2 {
+
+/*.content2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
+}*/
 .weather, .forecast, .events, .spotlights {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* optional: adds space between grid items */
 }
 
   
