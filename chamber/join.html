@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hammarsdale Chamber of Commerce - Supporting Businesses and Community">
+        <title>Join the Chamber of Commerce</title>
+        <meta name="author" content="Happiness">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- Facebook Social Media Meta Tags -->
+        <meta property="og:title" content="Chamber of Commerce Directory">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/fbmeta.jpg">
+        <meta property="og:url" content="chamber/directory.html">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/join.css"
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <figure>
+            <img src="images/logo.jpg" alt="Logo">
+            <figcaption>Hammarsdale Chamber of Commerce</figcaption>
+            </figure>
+        </div>
+    <nav>
+        <button id="menu-toggle">=</button>
+        <ul id="menu">
+            <li>
+                <a href="chamber/index.html">Home</a>
+            </li>
+            <li>
+                <a href="chamber/directory.html" class="active">Directory</a>
+            </li>
+            <li>
+                <a href="chamber/join.html">Join</a>
+            </li>
+            <li>
+                <a href="chamber/discover.html">Discover</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+        <h1>Join the Chamber</h1>
+        <form action="thankyou.html" method="get">
+            <label>
+                First Name: <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
+            </label>
+            <label>
+                Last Name: <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+            </label>
+            <label>
+                Title: <input type="text" name="title" pattern="[A-Za-z\-\s]{7,}" title="At least 7 letters, hyphens, or spaces" autocomplete="organization-title">
+            </label>
+            <label>
+                Email: <input type="email" name="email" required title="Enter a valid email" placeholder="example@domain.com" autocomplete="email">
+            </label>
+            <label>
+                Phone: <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel">
+            </label>
+            <label>
+                Organization: <input type="text" name="organization" required title="Enter your organization" autocomplete="organization">
+            </label>
+            <label>
+                Membership Level:
+                <select name="membership" required>
+                    <option value="np">Non-Profit</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+            <label>
+                Description: <textarea name="description" title="Describe your business"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit">Submit</button>
+        </form>
+        
+        <section class="membership-cards">
+            <div class="card" onclick="openModal('npModal')">Non-Profit Membership</div>
+            <div class="card" onclick="openModal('bronzeModal')">Bronze Membership</div>
+            <div class="card" onclick="openModal('silverModal')">Silver Membership</div>
+            <div class="card" onclick="openModal('goldModal')">Gold Membership</div>
+        </section>
+        
+        <!-- Membership Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">Non-Profit Benefits<button onclick="closeModal('npModal')">Close</button></div>
+        </div>
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">Bronze Benefits<button onclick="closeModal('bronzeModal')">Close</button></div>
+        </div>
+        <div id="silverModal" class="modal">
+            <div class="modal-content">Silver Benefits<button onclick="closeModal('silverModal')">Close</button></div>
+        </div>
+        <div id="goldModal" class="modal">
+            <div class="modal-content">Gold Benefits<button onclick="closeModal('goldModal')">Close</button></div>
+        </div>
+    </main>
+    
+    <footer>
+
+        <div class="adress">
+            <p>
+                Hammarsdale Chamber of Commerse
+                76 commicial street
+                Hammarsdale, Mpumalanga
+                info@Hammarsdale.org
+                (031) 7740 6947
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.youtube.com/chamberofcommerce" target="_blank">
+                <img src="images/youtube.jpg" alt="YouTuube">
+            </a>
+            <a href="https://www.twitter.com/chamberofcommerce_123" target="_blank">
+                <img src="images/twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/chamberofcommerce" target="_blank">
+                <img src="images/linkedin.jpg" alt="LinkedIn">
+            </a>
+        </div>
+
+        <div class="dates">
+            <p>&copy; <span id="year"></span> | WDD 231 | Chamber of Commerce | Happiness Ncube</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+        function openModal(id) { document.getElementById(id).style.display = 'block'; }
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+    </script>
+    <script defer src="scripts/dates.js"></script>
+    <script defer src="scripts/members.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/weather.js"></script>
+</body>
+</html>
