@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Hammarsdale Chamber of Commerce - Supporting Businesses and Community">
-        <title>Join the Chamber of Commerce</title>
-        <meta name="author" content="Happiness">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <!-- Facebook Social Media Meta Tags -->
-        <meta property="og:title" content="Chamber of Commerce Directory">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="images/fbmeta.jpg">
-        <meta property="og:url" content="chamber/directory.html">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/small.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="styles/join.css"
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hammarsdale Chamber of Commerce - Supporting Businesses and Community">
+    <title>Join the Chamber of Commerce</title>
+    <meta name="author" content="Happiness">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x721f4a1.png">
+    <!-- Facebook Social Media Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/fbmeta.jpg">
+    <meta property="og:url" content="chamber/join.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
 <body>
     <header>
         <div class="logo">
@@ -72,6 +72,7 @@
             <label>
                 Membership Level:
                 <select name="membership" required>
+                    <option value="" disabled selected>Choose an option</option>
                     <option value="np">Non-Profit</option>
                     <option value="bronze">Bronze</option>
                     <option value="silver">Silver</option>
@@ -86,6 +87,7 @@
         </form>
         
         <section class="membership-cards">
+            <h2>Membership Cards</h2>
             <div class="card" onclick="openModal('npModal')">Non-Profit Membership</div>
             <div class="card" onclick="openModal('bronzeModal')">Bronze Membership</div>
             <div class="card" onclick="openModal('silverModal')">Silver Membership</div>
