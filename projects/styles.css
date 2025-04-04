@@ -1,0 +1,38 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #F3F4F6;
+    color: #1E3A8A;
+    margin: 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1E3A8A;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+#wireframe {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#wireframe img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1E3A8A; /* Deep blue border for consistency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1E3A8A;
+    color: #FFD700;
+}
+
