@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover</title>
+  <meta name="description" content="Hammarsdale Chamber of Commerce - Discover Businesses and Community">
+  <meta name="author" content="Happiness">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)" />
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)" />
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.jpg" type="image/jpg" >
+  <!-- Facebook Social Media Meta Tags -->
+  <meta property="og:title" content="Chamber of Commerce Discover">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="wdd231/chamber/images/fbmeta.jpg">
+  <meta property="og:url" content="https://zionncube.github.io/wdd231/chamber/discover.html">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <figure>
+        <img src="images/logo.jpg" alt="Logo">
+        <figcaption>Hammarsdale Chamber of Commerce</figcaption>
+        </figure>
+    </div>
+<nav>
+    <button id="menu-toggle">=</button>
+    <ul id="menu">
+        <li>
+            <a href="chamber/index.html">Home</a>
+        </li>
+        <li>
+            <a href="chamber/directory.html" class="active">Directory</a>
+        </li>
+        <li>
+            <a href="chamber/join.html">Join</a>
+        </li>
+        <li>
+            <a href="chamber/discover.html">Discover</a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+  <main>
+    <aside id="visit-message"></aside>
+    <section class="grid-container" id="places-container"></section>
+  </main>
+
+  <footer>
+
+    <div class="adress">
+        <p>
+            Hammarsdale Chamber of Commerse
+            76 commicial street
+            Hammarsdale, Mpumalanga
+            info@Hammarsdale.org
+            (031) 7740 6947
+        </p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/chamberofcommerce" target="_blank">
+            <img src="images/youtube.jpg" alt="YouTuube">
+        </a>
+        <a href="https://www.twitter.com/chamberofcommerce_123" target="_blank">
+            <img src="images/twitter.jpg" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com/chamberofcommerce" target="_blank">
+            <img src="images/linkedin.jpg" alt="LinkedIn">
+        </a>
+    </div>
+
+    <div class="dates">
+        <p>&copy; <span id="year"></span> | WDD 231 | Chamber of Commerce | Happiness Ncube</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+</footer>
+  <script src="scripts/discover.js"></script>
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/dates.js"></script>
+</body>
+</html>

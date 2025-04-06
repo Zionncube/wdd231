@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Farmers Market Stall",
+    "address": "12 Park St",
+    "description": "A vibrant stall at a farmers market displaying fresh produce..",
+    "image": "images/farmers-market.webp"
+  },
+  {
+    "name": "Coffee shop",
+    "address": "456 Maroon  Rd",
+    "description": "A cozy local coffee shop, inviting passersby..",
+    "image": "images/coffee-shop.webp"
+  },
+  {
+    "name": "Boutique Clothing Store",
+    "address": "49 Rampasard Rd",
+    "description": "Interior of a boutique clothing store showcasing unique apparel.",
+    "image": "images/boutique.webp"
+  },
+  {
+    "name": "Artisan Bakery Display",
+    "address": "32 Bakers Rd",
+    "description": "Freshly baked bread and pastries displayed in a local bakery.",
+    "image": "images/bakery.jpg"
+  },
+  {
+    "name": "Independent Bookstore",
+    "address": "677 Museum Rd",
+    "description": "Shelves filled with books in a cozy independent bookstore.",
+    "image": "images/book-store.jpg"
+  },
+  {
+    "name": "Family-Owned Restaurant",
+    "address": "43 Main Rd",
+    "description": "A welcoming family-owned restaurant with neatly arranged tables.",
+    "image": "images/restaurant.jpg"
+  },
+  {
+    "name": "Modern Office Building",
+    "address": "585 Broad Rd",
+    "description": "Exterior of a modern office building housing local businesses.",
+    "image": "images/office-building.jpg"
+  },
+  {
+    "name": "Hardware Store Interior",
+    "address": "326 Builders Rd",
+    "description": "Inside view of a hardware store stocked with tools and supplies.",
+    "image": "images/hardware-store.jpeg"
+  },
+  {
+    "name": "Town Square with Shops",
+    "address": "89 Smith St",
+    "description": "A bustling town square surrounded by various local shops.",
+    "image": "images/town-square.jpg"
+  }
+]

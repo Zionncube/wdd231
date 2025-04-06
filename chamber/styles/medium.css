@@ -1,0 +1,6 @@
+.grid-container {
+    grid-template-areas:
+      "card card"
+      "card card";
+  }
+  
