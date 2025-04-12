@@ -1,0 +1,84 @@
+/* large.css */
+
+/* Desktop Styles */
+
+nav ul {
+    flex-direction: row;
+    display: flex !important;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo figcaption {
+    font-size: 1.5rem;
+  }
+  
+  button#menu-toggle {
+    display: none;
+  }
+  
+  main {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Weather Icon for Desktop (Pseudo-element) */
+@media (min-width: 768px) {
+  .weather-icon::after {
+      content: " ⛅";
+      font-size: 24px;
+  }
+}
+
+#image-gallary{
+  display: grid;
+  gap: 10px;
+}
+  
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .address {
+    text-align: left;
+    padding-right: 50px;
+  }
+  
+  .social-links {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .copyright {
+    text-align: right;
+  }
+  
+  
+  .strategies-section{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+
+  .about-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  
+
+  
+  

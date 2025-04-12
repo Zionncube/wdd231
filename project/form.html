@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | MindWink Academy</title>
+  <meta name="description" content="Join MindWink Academy - unlock your potential for academic and personal growth.">
+  <meta name="author" content="Happiness">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+  <link rel="icon" href="images/favicon.ico" type="image/jpg">
+  <!-- Facebook Social Media Meta Tags -->
+  <meta property="og:title" content="MindWink sign up page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="wdd231/project/images/fbmeta.jpg">
+  <meta property="og:url" content="https://zionncube.github.io/wdd231/project/form.html">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <figure>
+        <img src="images/logo.webp" alt="MindWink Academy Logo" width="50" height="50">
+        <figcaption>MindWink Academy</figcaption>
+      </figure>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="strategies.html">Strategies</a></li>
+        <li><a href="form.html" class="active">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="signup-form">
+    <h1>Join MindWink Academy</h1>
+    <p>Start your journey to confidence, clarity, and success. Sign up below!</p>
+
+    <form action="thankyou.html" method="get">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="goal">Your Main Academic/Personal Goal:</label>
+      <textarea id="goal" name="goal" rows="4"></textarea>
+
+      <label for="membership">Interested In:</label>
+      <select id="membership" name="membership">
+        <option value="strategies">Study Strategies</option>
+        <option value="mentoring">Mentorship</option>
+        <option value="resources">Resources & Audiobooks</option>
+        <option value="community">Support Group</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="newsletter" value="yes">
+        I want to receive the weekly MindWink insights newsletter
+      </label>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </main>
+
+  <footer>
+    <div class="adress">
+      <p>
+        MindWink Academy<br>
+        k100 Sofasonke Rd<br>
+        Hammarsdale, Mpumalanga<br>
+        mercy.msawenkosi@gmail.com<br>
+        +27 67 873 1152
+      </p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.youtube.com/chamberofcommerce" target="_blank">
+        <img src="images/youtube.jpg" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/chamberofcommerce" target="_blank">
+        <img src="images/linkedin.jpg" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="dates">
+      <p>&copy; <span id="year"></span> | WDD 231 | MindWink Academy | Happiness Ncube</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+      <p><a href="attribution.html">Attribution</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js">differ</script>
+</body>
+</html>

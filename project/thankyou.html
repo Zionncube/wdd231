@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You | MindWink Academy</title>
+  <meta name="description" content="Thank you for joining us, see you soon!.">
+  <meta name="author" content="Happiness">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+  <link rel="icon" href="images/favicon.ico" type="image/jpg">
+  <!-- Facebook Social Media Meta Tags -->
+  <meta property="og:title" content="MindWink Thankyou page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="wdd231/project/images/fbmeta.jpg">
+  <meta property="og:url" content="https://zionncube.github.io/wdd231/project/Thankyou.html">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <figure>
+        <img src="images/logo.webp" alt="MindWink Academy Logo" width="50" height="50">
+        <figcaption>MindWink Academy</figcaption>
+      </figure>
+    </div>
+    <button id="menu-toggle">&#9776;</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="strategies.html">Strategies</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="form.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="thank-you">
+    <h2>Thank you, <span id="displayName"></span>!</h2>
+    <p>We're excited to have you join the MindWink journey! 🚀</p>
+    <p>Look out for more resources and strategies sent to your inbox soon.</p>
+    <a href="index.html" class="cta-button">Return to Home</a>
+  </main>
+
+  <footer>
+    <div class="adress">
+      <p>
+        MindWink Academy<br>
+        k100 Sofasonke Rd<br>
+        Hammarsdale, Mpumalanga<br>
+        mercy.msawenkosi@gmail.com<br>
+        +27 67 873 1152
+      </p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.youtube.com/chamberofcommerce" target="_blank">
+        <img src="images/youtube.jpg" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/chamberofcommerce" target="_blank">
+        <img src="images/linkedin.jpg" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="dates">
+      <p>&copy; <span id="year"></span> | WDD 231 | MindWink Academy | Happiness Ncube</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js">differ</script>
+  <script>
+    const name = localStorage.getItem("username");
+    document.getElementById("displayName").textContent = name ? name : "friend";
+  </script>
+</body>
+</html>
