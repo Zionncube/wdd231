@@ -82,7 +82,7 @@ if (thankYouName) {
 
 //get all images
 const images = 
-document.querySelectorAll('#imgage-gallary img')
+document.querySelectorAll('#image-gallary img')
 
 //add event listenertoeach image
 images.forEach(image => {image.addEventListener('click', () =>{
@@ -93,7 +93,7 @@ images.forEach(image => {image.addEventListener('click', () =>{
 });
 
 // function to filter images
-function filterImages (cateory) {
+function filterImages (category) {
   images.forEach(image => {
     if
     (image.getAttribute('data-category') === category) {
