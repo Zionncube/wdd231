@@ -1,20 +1,15 @@
 // main.js
 
 // Toggle navigation menu
-const menuToggle = document.getElementById('menu-toggle');
+const menuToggle = document.getElementById('menu-toggle')
 const nav = document.getElementById('main-nav');
 
 menuToggle.addEventListener("click", () => {
-  menu.classList.toggle("open");
-  if (menu.classList.contains("open")) {
-      menu.style.display = "flex";
-  } else {
-      menu.style.display = "none";
-  }
-})
+  nav.querySelector('ul').classList.toggle("show"); // added querysecector and repalced open with show
+});
 
 menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('open');
+  nav.classList.toggle('show'); //changed open to show
 });
 
 // Set current year in footer
