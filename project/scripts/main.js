@@ -40,7 +40,7 @@ if (temp <= 50 && windSpeed > 3) {
 
 
 
-// Modal dialog for resources (to use later)
+// Modal dialog for resources
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modal-title");
 const modalDescription = document.getElementById("modal-description");
